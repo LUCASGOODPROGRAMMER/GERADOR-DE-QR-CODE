@@ -89,3 +89,14 @@ body {
     opacity: 1;
 }
 
+@media screen and (max-width: 376px){
+    .container{
+        height: 320px;
+        margin: 5px;
+    }
+    .container.active {
+    height: 550px;
+}
+}
+    
+
