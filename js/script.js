@@ -12,12 +12,13 @@ function generateQrCode() {
   qrCodeImg.addEventListener("load", () => {
     container.classList.add("active");
     qrCodeBtn.innerText = "QR CODE GERADO";
-    qrCodeInput.addEventListener("keydown", () => {
-      container.classList.remove("active");
-      qrCodeBtn.innerText = "Gerar QR Code";
-    });
   });
 }
+
+qrCodeInput.addEventListener("keydown", () => {
+  container.classList.remove("active");
+  qrCodeBtn.innerText = "Gerar QR Code";
+});
 
 qrCodeBtn.addEventListener("click", () => {
   qrCodeBtn.innerText = "AGUARDE UM POUCO...";
@@ -34,5 +35,3 @@ qrCodeInput.addEventListener("keydown", (e) => {
     }, 2000);
   }
 });
-
-
